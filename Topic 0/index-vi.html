@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Sign Up</title>
   </head>
   <body>
@@ -10,10 +11,10 @@
     </header>
     <div>
       <form>
-      <p><label>First Name: <input></label></p>
-      <p><label>Last Name: <input></label></p>
-      <p><label>Email: <input></label></p>
-      <p><label>Birthday: <input></label></p>
+      <p><label>First Name: <input type="text" name="firstname" required></label></p>
+      <p><label>Last Name: <input type="text" name="lastname" required></label></p>
+      <p><label>Email: <input type="email" required></label></p>
+      <p><label>Birthday: <input type="date" required></label></p>
       <p><label>Favorite Sport:
         <select name="c">
         <option value="8.01.1">Football
@@ -26,12 +27,15 @@
         <option value="8.03.2">Volleyball
         <option value="8.03.3">Chess
         </select>
+      </label>
       </p>
-      <p><label>My Bio:
-        <textarea name="comments" maxlength=1000>
+      <p><label>
+        <textarea name="comments" maxlength=1000>About me:
         </textarea>
-         </label>
+        </label>
       </p>
+      <input type="submit" value="Submit">
+      <button type="reset" value="Reset">Reset</button>
       </form>
     </div>
   </body>
