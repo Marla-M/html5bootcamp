@@ -1,0 +1,65 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  width: auto;
+}
+
+.container {
+  display: flex;
+  background: lightgray;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.one,
+.two,
+.three,
+.four,
+.five,
+.six {
+  flex: 1;
+  width: 15%;
+  margin-right: 1px;
+  background: white;
+  min-width: 15%;
+  height: 900px;
+}
+
+.element1 {
+    float: left;
+    width: 350px;
+    height: 200px;
+    margin: 5px;
+    position: relative;
+    top: 160px;
+    left: 15px;
+    background: gray;
+    display: inline-block;
+}
+
+
+.headtext {
+  width: 66%;
+  position: absolute;
+  top: 15px;
+  left: 420px;
+  font-family: Helvetica;
+}
+
+.head {
+  height: 200px;
+  position: absolute;
+  top: 0;
+  left: 15px;
+  font-family: Helvetica;
+}
+
+.element1:hover {
+  background-color: lightgray;
+  opacity: 5;
+
+}
